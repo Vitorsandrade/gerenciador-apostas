@@ -8,8 +8,8 @@ import lombok.Getter;
 public class ApostaOut {
 
 	private String numeroAposta;
-	
+
 	private String nomeApostador;
-	
+
 	private String emailApostador;
 }
