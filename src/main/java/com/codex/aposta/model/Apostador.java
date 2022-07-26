@@ -1,11 +1,16 @@
-package com.codex.aposta;
+package com.codex.aposta.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 @Entity
+@Getter
+@AllArgsConstructor
 public class Apostador {
 
 	@Id
@@ -16,19 +21,4 @@ public class Apostador {
 	
 	private String email;
 
-	public Apostador(String nome, String email) {
-		super();
-		this.nome = nome;
-		this.email = email;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-	
-	
 }
